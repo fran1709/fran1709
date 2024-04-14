@@ -1,0 +1,11 @@
+.navbar-nav .nav-item a {
+  color: white;
+  /* Color de texto normal */
+  transition: color 0.3s;
+  /* Transición suave para el cambio de color */
+}
+
+.navbar-nav .nav-item a:hover {
+  /*color: yellow; /* Color de texto al pasar el mouse */
+  color: rgb(54, 204, 154);
+}

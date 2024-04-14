@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../../shared/Navbar.css'; // Importa el archivo CSS para estilos personalizados
 
 const Navbar: React.FC = () => {
   // Estado para controlar si el menú desplegable está abierto o cerrado
@@ -17,17 +18,17 @@ const Navbar: React.FC = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
-          <ul className="navbar-nav ms-auto"> 
-            <li className="nav-item">
+          <ul className="row navbar-nav ms-auto"> 
+            <li className="col relleno nav-item">
               <a className="nav-link" href="#">Sobre Mi</a>
             </li>
-            <li className="nav-item">
+            <li className="col relleno nav-item">
               <a className="nav-link" href="#">Proyectos</a>
             </li>
-            <li className="nav-item">
+            <li className="col relleno nav-item">
               <a className="nav-link" href="#">Educación</a>
             </li>
-            <li className="nav-item">
+            <li className="col relleno nav-item">
               <a className="nav-link" href="#">Contacto</a>
             </li>
           </ul>
