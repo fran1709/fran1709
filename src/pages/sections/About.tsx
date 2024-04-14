@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { getFirebaseImage, getFirstPersonaDocument } from '../../controllers/Persona';
+import {getFirstPersonaDocument } from '../../controllers/Persona';
 import { Persona } from '../../controllers/Interfaces';
 import '../../shared/About.css';
+import { getFirebaseImage } from '../../controllers/Firebase';
 
 const About: React.FC = () => {
     const [dataPersona, setDataPersona] = useState<Persona | null>(null);

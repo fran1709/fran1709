@@ -1,7 +1,6 @@
 import { collection, getDocs } from "firebase/firestore";
-import { dataBase, firebase_storage } from "./Firebase";
+import { dataBase } from "./Firebase";
 import { Persona } from "./Interfaces";
-import { getDownloadURL, ref } from "firebase/storage";
 
 // Function to fetch the first document from the 'Persona' collection
 export const getFirstPersonaDocument = async () => {
@@ -32,12 +31,3 @@ export const getFirstPersonaDocument = async () => {
     }
 };
 
-export const getFirebaseImage = async (path: string) => {
-    try {
-        const docRef = ref(firebase_storage, path)
-
-        const res = await getDownloadURL(docRef).then((url) => url)
-        return res
-    } catch (error: unknown) { console.log(error) }
-
-}

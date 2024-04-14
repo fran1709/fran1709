@@ -1,0 +1,28 @@
+.home-container {
+    width: 90%; /* Ajusta el ancho del contenedor al 90% del ancho de la pantalla */
+    margin: 0 auto; /* Centra el contenedor horizontalmente en la página */
+    padding: 20px; /* Añade un espacio interno alrededor del contenedor */
+    background-color: #f9f9f9; /* Cambia el color de fondo del contenedor */
+    border-radius: 8px; /* Agrega bordes redondeados al contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave al contenedor */
+  }
+  
+  /* Estilos adicionales para mejorar la apariencia de los elementos dentro del contenedor */
+  .home-container h2 {
+    color: #333; /* Cambia el color del texto del encabezado */
+    font-size: 24px; /* Cambia el tamaño del texto del encabezado */
+    margin-bottom: 10px; /* Añade un espacio inferior al encabezado */
+  }
+  
+  .home-container p {
+    color: #666; /* Cambia el color del texto del párrafo */
+    font-size: 16px; /* Cambia el tamaño del texto del párrafo */
+    line-height: 1.5; /* Ajusta el interlineado del párrafo */
+  }
+  
+  .home-container img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del ancho del contenedor */
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen para que se ajuste al contenedor */
+    border-radius: 50%; /* Agrega bordes redondeados a la imagen */
+  }
+  
