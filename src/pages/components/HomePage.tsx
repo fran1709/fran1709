@@ -1,12 +1,11 @@
 // Home.tsx
 import React from 'react';
+import About from '../sections/About';
 
 const Home: React.FC = () => {
   return (
     <div>
-      <h1>Inicio</h1>
-      <p>Bienvenido a nuestra aplicación.</p>
-      <p>Esta es la página principal.</p>
+      <About/>
     </div>
   );
 };
