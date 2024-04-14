@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
     replace({
-        preventAssignment: true,
+      preventAssignment: true,
       __REACT_APP_FIREBASE_API_KEY__: JSON.stringify(process.env.REACT_APP_FIREBASE_API_KEY),
       __REACT_APP_FIREBASE_AUTH_DOMAIN__: JSON.stringify(process.env.REACT_APP_FIREBASE_AUTH_DOMAIN),
       __REACT_APP_FIREBASE_PROJECT_ID__: JSON.stringify(process.env.REACT_APP_FIREBASE_PROJECT_ID),
