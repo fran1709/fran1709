@@ -10,6 +10,13 @@ const Navbar: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
@@ -18,18 +25,18 @@ const Navbar: React.FC = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
-          <ul className="row navbar-nav ms-auto"> 
+          <ul className="row navbar-nav ms-auto">
             <li className="col relleno nav-item">
-              <a className="nav-link" href="#">Sobre Mi</a>
+              <a className="nav-link" href="#" onClick={() => scrollToSection('about')}>Sobre Mi</a>
             </li>
             <li className="col relleno nav-item">
-              <a className="nav-link" href="#">Proyectos</a>
+              <a className="nav-link" href="#" onClick={() => scrollToSection('projects')}>Proyectos</a>
             </li>
             <li className="col relleno nav-item">
-              <a className="nav-link" href="#">Educación</a>
+              <a className="nav-link" href="#" onClick={() => scrollToSection('education')}>Educación</a>
             </li>
             <li className="col relleno nav-item">
-              <a className="nav-link" href="#">Contacto</a>
+              <a className="nav-link" href="#" onClick={() => scrollToSection('contact')}>Contacto</a>
             </li>
           </ul>
         </div>

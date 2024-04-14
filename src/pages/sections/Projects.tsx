@@ -34,7 +34,6 @@ const Projects: React.FC = () => {
 
     return (
         <div className="container">
-            <h4 className="my-4">Proyectos en los que he trabajado</h4>
             <div className="row project">
                 {projects.map((project, index) => (
                     <div className="col-md-4" key={index}>
