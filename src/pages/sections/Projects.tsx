@@ -2,36 +2,48 @@ import React, { useEffect, useState } from 'react';
 import { Project } from '../../controllers/Interfaces';
 import { getProjectDocuments } from '../../controllers/Project';
 import ProjectCard from './sub-section/Project';
+import '../../shared/Projects.css'; // Importa el archivo CSS para las animaciones
 
 const Projects: React.FC = () => {
-  const [projects, setProjects] = useState<Project[]>([]);
-  
-  useEffect(() => {
-    // Función asincrónica para obtener los proyectos de Firebase
-    const fetchProjects = async () => {
-      try {
-        const projectsFromFirebase = await getProjectDocuments(); // Función para obtener proyectos de Firebase
-        setProjects(projectsFromFirebase);
-      } catch (error) {
-        console.error('Error fetching projects from Firebase:', error);
-      }
+    const [projects, setProjects] = useState<Project[]>([]);
+
+    useEffect(() => {
+        // Función asincrónica para obtener los proyectos de Firebase
+        const fetchProjects = async () => {
+            try {
+                const projectsFromFirebase = await getProjectDocuments(); // Función para obtener proyectos de Firebase
+                setProjects(projectsFromFirebase);
+            } catch (error) {
+                console.error('Error fetching projects from Firebase:', error);
+            }
+        };
+
+        fetchProjects(); // Llama a la función para obtener los proyectos cuando el componente se monta
+    }, []);
+
+    const animateEntrance = () => {
+        const text = document.querySelector('.project');
+
+        // Animación para el texto
+        text?.classList.add('slide-from-bottom');
     };
 
-    fetchProjects(); // Llama a la función para obtener los proyectos cuando el componente se monta
-  }, []);
+    useEffect(() => {
+        animateEntrance();
+    }, [projects]); // Se ejecuta cada vez que dataPersona cambia
 
-  return (
-    <div className="container">
-      <h4 className="my-4">Proyectos en los que he trabajado</h4>
-      <div className="row">
-        {projects.map((project, index) => (
-          <div className="col-md-4" key={index}>
-            <ProjectCard project={project} />
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+    return (
+        <div className="container">
+            <h4 className="my-4">Proyectos en los que he trabajado</h4>
+            <div className="row project">
+                {projects.map((project, index) => (
+                    <div className="col-md-4" key={index}>
+                        <ProjectCard project={project} />
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
 };
 
 export default Projects;

@@ -29,10 +29,10 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
   };
 
   return (
-    <div className="card mb-3">
+    <div className="card mb-3  shadow-lg">
       <div className="row g-0">
         <div className="col-md-12">
-          <img src={imageUrl} alt={project.nombre} className="img-fluid rounded-top" style={{ width: '100%', maxHeight: '250px' }} />
+          <img src={imageUrl} alt={project.nombre} className="img-fluid rounded-top" style={{ width: '100%', maxHeight: '230px' }} />
         </div>
       </div>
       <div className="row g-0">
