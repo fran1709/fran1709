@@ -940,11 +940,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\GitHub\\franPortfolio\\franPortfolio.csproj",
+      "projectUniqueName": "G:\\GitHub\\fran1709.github.io\\franPortfolio.csproj",
       "projectName": "franPortfolio",
-      "projectPath": "G:\\GitHub\\franPortfolio\\franPortfolio.csproj",
+      "projectPath": "G:\\GitHub\\fran1709.github.io\\franPortfolio.csproj",
       "packagesPath": "C:\\Users\\franj\\.nuget\\packages\\",
-      "outputPath": "G:\\GitHub\\franPortfolio\\obj\\",
+      "outputPath": "G:\\GitHub\\fran1709.github.io\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\franj\\AppData\\Roaming\\NuGet\\NuGet.Config"
