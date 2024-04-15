@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
 
     const handleShowToast = () => {
         CustomToastNotification({ message: 'Funcionalidad aún no implementada.' });
-      };
+    };
 
     const handleFormSubmit = async (e: React.FormEvent) => {
         handleShowToast();
@@ -47,9 +47,9 @@ const Contact: React.FC = () => {
     function handleTelegramLinkClick(): void {
         const userAgent = navigator.userAgent;
         const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
-    
+
         const url = `https://t.me/${dataPersona?.telegram}`;
-    
+
         if (isMobile) {
             window.open(`tg://resolve?domain=${dataPersona?.telegram}`, '_blank');
         } else {
@@ -58,7 +58,7 @@ const Contact: React.FC = () => {
     }
     function handleEmailLinkClick(): void {
         const url = `mailto:${dataPersona?.correo}`;
-    
+
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             window.open(url, '_system');
         } else {
@@ -69,12 +69,12 @@ const Contact: React.FC = () => {
     return (
         <div className="container">
             <div className="row ">
-            <span className="mb-4">{dataPersona?.info}</span>
+                <span className="mb-4">{dataPersona?.info}</span>
                 <div className="col-md-6">
                     <div className="contact-info mb-3 text-center">
                         <h3 className="mb-4">Correo Electrónico:</h3>
                         <FaEnvelope size={24} onClick={handleEmailLinkClick} className="me-2 iconer" style={{ color: '#D14836' }} />
-                        <a   onClick={handleEmailLinkClick} href='' className="text-decoration-none ">{dataPersona?.correo}</a>
+                        <a onClick={handleEmailLinkClick} href='' className="text-decoration-none ">{dataPersona?.correo}</a>
                     </div>
                 </div>
                 <div className="col-md-6">
@@ -98,7 +98,7 @@ const Contact: React.FC = () => {
                 <div className="col-md-6 offset-md-3 ">
                     <h3 className="mb-4 text-center">Envíame un correo y conversemos</h3>
                     <form onSubmit={handleFormSubmit}>
-                    <h6 className="mb-4 text-center text-danger">*** Funcionalidad aún no implementada ***</h6>
+                        <h6 className="mb-4 text-center text-danger">*** Funcionalidad aún no implementada ***</h6>
                         <div className="mb-3">
                             <label htmlFor="name" className="form-label">Nombre</label>
                             <input type="text" className="form-control" id="name" value={name} onChange={(e) => setName(e.target.value)} required />

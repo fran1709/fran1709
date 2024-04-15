@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Project, ProjectProps } from '../../../controllers/Interfaces';
 import { getFirebaseImage } from '../../../controllers/Firebase';
+import CustomToastNotification from '../../structure/Toast';
 
 const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
   const [imageUrl, setImageUrl] = useState<string>('');
@@ -25,8 +26,13 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
   };
 
   const handleButtonClick = () => {
+    handleShowToast();
     console.log('Botón presionado');
   };
+
+  const handleShowToast = () => {
+    CustomToastNotification({ message: 'Funcionalidad aún no implementada.' });
+};
 
   return (
     <div className="card mb-3  shadow-lg">
@@ -40,7 +46,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
           <div className="card-body">
             <h5 className="card-title">{project.nombre}</h5>
             <p className="card-text">{showDetails ? project.descripcion : `${project.descripcion.substring(0, 100)}...`}</p>
-            <span className="text-primary cursor-pointer" onClick={handleToggleDetails} style={{ cursor: 'pointer' }}>{showDetails ? 'Ocultar detalles' : 'Leer más'}</span>
+            <span className="text-primary cursor-pointer" onClick={handleToggleDetails} style={{ cursor: 'pointer' }}>{showDetails ? 'Ocultar detalles' : 'Leer más...'}</span>
             <button className="btn btn-primary mt-2" onClick={handleButtonClick} style={{ marginLeft: '15%' }}>Ver detalles</button>
           </div>
         </div>
