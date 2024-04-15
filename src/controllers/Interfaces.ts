@@ -3,6 +3,10 @@ export interface Persona {
   profesion: string;
   resume: string;
   imagenURL: string;
+  correo: string;
+  github: string;
+  linkedin: string;
+  telegram: string;
 }
 
 export interface Project {

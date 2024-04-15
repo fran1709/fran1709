@@ -35,11 +35,12 @@ const Education: React.FC = () => {
                 <div className="col-md-8">
                     <div className="card mb-3 shadow-lg education">
                         <div className="card-body ">
-                            <h5 className="card-title">{education?.nombre}</h5>
-                            <h6 className="card-subtitle mb-2 text-muted">{education?.carrera}</h6>
+                            <h4 className="card-title">{education?.nombre}</h4>
+                            
                             <p className="card-text">{education?.descripcion}</p>
-                            <p className="card-text">Fecha de inicio: {education?.fechaInicio}</p>
-                            <p className="card-text">Fecha de fin: {education?.fechaFin}</p>
+                            <h5 className="card-subtitle mb-2 text-bold">{education?.carrera}</h5>
+                            <p className="card-text">Fecha de ingreso: {education?.fechaInicio}</p>
+                            <p className="card-text">Fecha de graduación: {education?.fechaFin} (esperada)</p>
                         </div>
                     </div>
                 </div>

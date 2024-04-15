@@ -1,0 +1,14 @@
+.technologies {
+    display: flex; /* Mostrar las tecnologías horizontalmente */
+}
+
+.technology {
+    margin-right: 20px; /* Margen derecho entre cada tecnología */
+    padding: 10px; /* Espaciado interno para resaltar al pasar el cursor */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre las tecnologías */
+    transition: background-color 0.3s ease; /* Transición suave para el resaltado */
+}
+
+.technology:hover {
+    background-color: #f0f0f0; /* Color de fondo al pasar el cursor */
+}

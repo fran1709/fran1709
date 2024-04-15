@@ -27,7 +27,7 @@ export const getProjectDocuments = async () => {
         });
 
         // Log the data of all documents
-        console.log("Data of all documents in 'Proyectos' collection:", projectDocuments);
+        //console.log("Data of all documents in 'Proyectos' collection:", projectDocuments);
 
         // Return the data of all documents
         return projectDocuments;
