@@ -34,7 +34,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
     <div className="card mb-6  shadow-lg" onClick={handleShowToast} style={{ cursor: 'pointer' }}>
       <div className="row g-0">
         <div className="col-md-12">
-          <img src={imageUrl} alt={project.nombre} className="img-fluid rounded-top" style={{ width: '100%', maxHeight: '300px' }} />
+          <img src={imageUrl} alt={project.nombre} className="img-fluid rounded-top" style={{ width: '100%', maxHeight: '250px' }} />
         </div>
       </div>
       <div className="row g-0">
