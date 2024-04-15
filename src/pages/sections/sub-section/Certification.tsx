@@ -24,7 +24,7 @@ const CertificationCard: React.FC<CertificationProps> = ({ certification }) => {
     window.open(certification.id, '_blank');
   }
   return (
-    <div className="card-container" onClick={handleCertificationClick}>
+    <div className="card-container cursor-pointer" onClick={handleCertificationClick} style={{ cursor: 'pointer' }}>
       <div className="card mb-3 shadow-lg text-center">
         <div className="row g-0">
           <div className="col-md-12">
