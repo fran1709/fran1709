@@ -72,8 +72,8 @@ const Contact: React.FC = () => {
                 <span className="mb-4">{dataPersona?.info}</span>
                 <div className="col-md-6">
                     <div className="contact-info mb-3 text-center">
-                        <h3 className="mb-4">Correo Electrónico:</h3>
-                        <FaEnvelope size={24} onClick={handleEmailLinkClick} className="me-2 iconer" style={{ color: '#D14836' }} />
+                        <h3 className="mb-4">Email:</h3>
+                        <FaEnvelope size={24} onClick={handleEmailLinkClick} className="me-2 ciconer" style={{ color: '#D14836' }} />
                         <a onClick={handleEmailLinkClick} href='' className="text-decoration-none ">{dataPersona?.correo}</a>
                     </div>
                 </div>
@@ -82,7 +82,7 @@ const Contact: React.FC = () => {
                         <h3 className="mb-4">Telegram:</h3>
                         <FaTelegram
                             size={24}
-                            className="me-2 iconer"
+                            className="me-2 ciconer"
                             style={{ color: '#0088CC' }}
                             onClick={handleTelegramLinkClick}
                         />
@@ -96,22 +96,22 @@ const Contact: React.FC = () => {
                     </div>
                 </div>
                 <div className="col-md-6 offset-md-3 ">
-                    <h3 className="mb-4 text-center">Envíame un correo y conversemos</h3>
+                    <h3 className="mb-4 text-center">Send me an email and let's talk</h3>
                     <form onSubmit={handleFormSubmit}>
-                        <h6 className="mb-4 text-center text-danger">*** Funcionalidad aún no implementada ***</h6>
+                        <h6 className="mb-4 text-center text-danger">*** Unimplemented functionality. ***</h6>
                         <div className="mb-3">
-                            <label htmlFor="name" className="form-label">Nombre</label>
+                            <label htmlFor="name" className="form-label">Name</label>
                             <input type="text" className="form-control" id="name" value={name} onChange={(e) => setName(e.target.value)} required />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="subject" className="form-label">Asunto</label>
+                            <label htmlFor="subject" className="form-label">Subject</label>
                             <input type="text" className="form-control" id="subject" value={subject} onChange={(e) => setSubject(e.target.value)} required />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="description" className="form-label">Descripción</label>
+                            <label htmlFor="description" className="form-label">Description</label>
                             <textarea className="form-control" id="description" rows={3} value={description} onChange={(e) => setDescription(e.target.value)} required></textarea>
                         </div>
-                        <button type="submit" className="btn btn-primary">Enviar</button>
+                        <button type="submit" className="btn btn-primary">Send</button>
                     </form>
                 </div>
             </div>

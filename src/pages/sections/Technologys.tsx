@@ -80,7 +80,6 @@ const Technologies: React.FC = () => {
                         <span>GitLab</span>
                     </div>
                 </div>
-                {/* Agrega más tecnologías según sea necesario */}
             </div>
         </div>
     );

@@ -35,8 +35,9 @@ const Projects: React.FC = () => {
     return (
         <div className="container">
             <div className="row project">
+                <span className="mb-4">For more information click on the project of your interest:</span>
                 {projects.map((project, index) => (
-                    <div className="col-md-4" key={index}>
+                    <div className="col-md-4 iconers" key={index}>
                         <ProjectCard project={project} />
                     </div>
                 ))}

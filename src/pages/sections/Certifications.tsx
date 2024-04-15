@@ -35,7 +35,7 @@ const Certifications: React.FC = () => {
     return (
         <div className="container">
             <div className="row project">
-                <span className="mb-4">Si das clic en cualquiera de las siguientes cards serás redirigido hacia la página donde fue obtenida y podrás ver más detalles.</span>
+                <span className="mb-4">For more information click on the certification of your interest:</span>
                 {certifications.map((certification, index) => (
                     <div className="col-md-4" key={index}>
                         <CertificationCard certification={certification} />

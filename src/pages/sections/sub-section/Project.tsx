@@ -31,23 +31,22 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
   };
 
   const handleShowToast = () => {
-    CustomToastNotification({ message: 'Funcionalidad aún no implementada.' });
+    CustomToastNotification({ message: 'Unimplemented functionality.' });
 };
 
   return (
-    <div className="card mb-3  shadow-lg">
+    <div className="card mb-3  shadow-lg" onClick={handleButtonClick}>
       <div className="row g-0">
         <div className="col-md-12">
-          <img src={imageUrl} alt={project.nombre} className="img-fluid rounded-top" style={{ width: '100%', maxHeight: '230px' }} />
+          <img src={imageUrl} alt={project.nombre} className="img-fluid rounded-top" style={{ width: '100%', maxHeight: '300px' }} />
         </div>
       </div>
       <div className="row g-0">
         <div className="col-md-12">
           <div className="card-body">
             <h5 className="card-title">{project.nombre}</h5>
-            <p className="card-text">{showDetails ? project.descripcion : `${project.descripcion.substring(0, 100)}...`}</p>
+            <p className="card-text">{showDetails ? project.descripcion : `${project.descripcion.substring(0, 130)}...`}</p>
             <span className="text-primary cursor-pointer" onClick={handleToggleDetails} style={{ cursor: 'pointer' }}>{showDetails ? 'Ocultar detalles' : 'Leer más...'}</span>
-            <button className="btn btn-primary mt-2" onClick={handleButtonClick} style={{ marginLeft: '15%' }}>Ver detalles</button>
           </div>
         </div>
       </div>
