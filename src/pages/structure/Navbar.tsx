@@ -18,9 +18,9 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
       <div className="container">
-        <a className="navbar-brand" href="/">Portafolio Web de Fran</a>
+        <a className="navbar-brand" href="/"> <img src="src/assets/icono.png" alt="Icono" className="mr-2" style={{maxWidth:35}} /> Portafolio Web de Fran</a>
         <button className="navbar-toggler" type="button" onClick={toggleNavbar} aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>

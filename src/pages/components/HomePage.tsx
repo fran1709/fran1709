@@ -2,25 +2,28 @@ import React from 'react';
 import About from '../sections/About';
 import Projects from '../sections/Projects';
 import FloatingButton from '../components/FloatingButton'; // Importa el componente de botón flotante
+import Education from '../sections/Education';
 
 const Home: React.FC = () => {
   return (
     <div className="container">
-      <div id="about" className="row"> {/* identificador "about" */}
-        <div className="col">
-          <h1 className="mt-5 mb-4">Sobre mi persona</h1>
+      <div id="about" >
+          <h2 className="mt-5 mb-4">Perfil Profesional</h2>
           <About />
-        </div>
       </div>
-      <div id="projects" className="row"> {/* identificador "projects" */}
-        <div className="col">
-          <h1 className="mt-5 mb-4">Experiencia en Proyectos</h1>
+      <hr className="my-5" /> {/* Línea horizontal como separador */}
+      <div id="projects" >
+          <h2 className="mt-5 mb-4">Proyectos desarrollados</h2>
           <Projects />
-        </div>
       </div>
+      <hr className="my-5" /> {/* Línea horizontal como separador */}
+      <div id="education" >
+          <h2 className="mt-5 mb-4">Educación Universitaria</h2>
+          <Education />
+      </div>
+      <hr className="my-5" /> {/* Línea horizontal como separador */}
       <FloatingButton /> {/* Botón flotante */}
     </div>
-    
   );
 };
 

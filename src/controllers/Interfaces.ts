@@ -1,10 +1,6 @@
-import { Timestamp } from "firebase/firestore";
-
 export interface Persona {
   nombre: string;
-  nacimiento: Timestamp;
   profesion: string;
-  universidad: string;
   resume: string;
   imagenURL: string;
 }
@@ -17,4 +13,12 @@ export interface Project {
 
 export interface ProjectProps {
   project: Project;
+}
+
+export interface University {
+  nombre: string;
+  carrera: string;
+  descripcion: string;
+  fechaInicio: string;
+  fechaFin: string;
 }

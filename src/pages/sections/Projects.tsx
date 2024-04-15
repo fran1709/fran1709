@@ -24,13 +24,13 @@ const Projects: React.FC = () => {
     const animateEntrance = () => {
         const text = document.querySelector('.project');
 
-        // Animación para el texto
-        text?.classList.add('slide-from-bottom');
+        // Animación para las cards
+        text?.classList.add('slide-from-right');
     };
 
     useEffect(() => {
         animateEntrance();
-    }, [projects]); // Se ejecuta cada vez que dataPersona cambia
+    }, [projects]); // Se ejecuta cada vez que projects cambia
 
     return (
         <div className="container">
