@@ -8,4 +8,5 @@
 .navbar-nav .nav-item a:hover {
   /*color: yellow; /* Color de texto al pasar el mouse */
   color: rgb(54, 204, 154);
+  transform: scale(1.05);
 }

@@ -25,17 +25,20 @@ const Navbar: React.FC = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
-          <ul className="row navbar-nav ms-auto">
-            <li className="col relleno nav-item">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
               <a className="nav-link" href="#" onClick={() => scrollToSection('about')}>Sobre Mi</a>
             </li>
-            <li className="col relleno nav-item">
+            <li className="nav-item">
               <a className="nav-link" href="#" onClick={() => scrollToSection('projects')}>Proyectos</a>
             </li>
-            <li className="col relleno nav-item">
+            <li className="nav-item">
               <a className="nav-link" href="#" onClick={() => scrollToSection('education')}>Educación</a>
             </li>
-            <li className="col relleno nav-item">
+            <li className="nav-item">
+              <a className="nav-link" href="#" onClick={() => scrollToSection('technologys')}>Tecnologías</a>
+            </li>
+            <li className=" nav-item">
               <a className="nav-link" href="#" onClick={() => scrollToSection('contact')}>Contacto</a>
             </li>
           </ul>

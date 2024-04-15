@@ -7,6 +7,7 @@ export interface Persona {
   github: string;
   linkedin: string;
   telegram: string;
+  info: string;
 }
 
 export interface Project {
@@ -25,4 +26,15 @@ export interface University {
   descripcion: string;
   fechaInicio: string;
   fechaFin: string;
+}
+
+export interface Certification {
+  nombre: string;
+  entidad: string;
+  id: string;
+  imagenURL: string;
+}
+
+export interface CertificationProps {
+  certification: Certification;
 }

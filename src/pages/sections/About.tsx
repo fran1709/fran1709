@@ -56,13 +56,13 @@ const About: React.FC = () => {
                         {/* Icono de LinkedIn con enlace al perfil de LinkedIn */}
                         {dataPersona?.linkedin && (
                             <a href={dataPersona.linkedin} target="_blank" rel="noopener noreferrer">
-                                <FaLinkedin size={35} />
+                                <FaLinkedin size={35} className='shadow-lg iconer'/>
                             </a>
                         )}
                         {/* Icono de GitHub con enlace al perfil de GitHub */}
                         {dataPersona?.github && (
                             <a href={dataPersona.github} target="_blank" rel="noopener noreferrer">
-                                <FaGithub size={35} className="text-dark ms-3" /> {/* Aplica la clase text-dark para hacer que el icono de GitHub sea negro */}
+                                <FaGithub size={35} className="text-dark ms-3 shadow-lg iconer" /> {/* Aplica la clase text-dark para hacer que el icono de GitHub sea negro */}
                             </a>
                         )}
                     </div>

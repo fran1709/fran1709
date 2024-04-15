@@ -5,12 +5,13 @@ import FloatingButton from '../components/FloatingButton'; // Importa el compone
 import Education from '../sections/Education';
 import Contact from '../sections/Contact';
 import Technologies from '../sections/Technologys';
+import Certifications from '../sections/Certifications';
 
 const Home: React.FC = () => {
   return (
     <div className="container">
       <div id="about" >
-          <h2 className="mt-5 mb-4">Perfil Profesional</h2>
+          <h2 className="mt-5 mb-4">Un poco sobre mi</h2>
           <About />
       </div>
       <hr className="my-5" /> {/* Línea horizontal como separador */}
@@ -19,13 +20,18 @@ const Home: React.FC = () => {
           <Projects />
       </div>
       <hr className="my-5" /> {/* Línea horizontal como separador */}
-      <div id="skills" >
+      <div id="certifications" >
+          <h2 className="mt-5 mb-4">Certificaciones & Licencias</h2>
+          <Certifications />
+      </div>
+      <hr className="my-5" /> {/* Línea horizontal como separador */}
+      <div id="education" >
           <h2 className="mt-5 mb-4">Educación Universitaria</h2>
           <Education />
       </div>
       <hr className="my-5" /> {/* Línea horizontal como separador */}
-      <div id="education" >
-          <h2 className="mt-5 mb-4 center">Tecnologías</h2>
+      <div id="technologys" >
+          <h2 className="mt-5 mb-4 center">Tecnologías con las que estoy familiarizado</h2>
           <Technologies />
       </div>
       <hr className="my-5" /> {/* Línea horizontal como separador */}

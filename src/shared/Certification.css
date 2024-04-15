@@ -1,0 +1,9 @@
+
+.card-container {
+    transition: transform 0.3s ease;
+}
+
+.card-container:hover {
+    transform: scale(1.05);
+    /* Cambia el valor para ajustar la cantidad de agrandamiento */
+}

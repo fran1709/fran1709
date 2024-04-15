@@ -52,3 +52,7 @@
   z-index: 1000;
   /* Asegura que el botón esté por encima de otros elementos */
 }
+
+.btn-floating:hover{
+  transform: scale(1.15);
+}

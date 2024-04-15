@@ -5,6 +5,7 @@
 .slide-from-right {
     animation: slideInRight 2s forwards;
 }
+
 @keyframes slideInBottom {
     from {
         transform: translateY(-100%);
@@ -16,11 +17,13 @@
         opacity: 1;
     }
 }
+
 @keyframes slideInRight {
     from {
         transform: translateX(100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;

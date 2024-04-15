@@ -11,4 +11,5 @@
 
 .technology:hover {
     background-color: #f0f0f0; /* Color de fondo al pasar el cursor */
+    transform: scale(1.15);
 }
