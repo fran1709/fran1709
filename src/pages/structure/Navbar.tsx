@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
               <a className="nav-link" href="#" onClick={() => scrollToSection('about')}>About</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" onClick={() => scrollToSection('projects')}>Porjects</a>
+              <a className="nav-link" href="#" onClick={() => scrollToSection('projects')}>Projects</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#" onClick={() => scrollToSection('education')}>Education</a>

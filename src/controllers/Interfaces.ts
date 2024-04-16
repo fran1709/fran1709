@@ -15,6 +15,7 @@ export interface Project {
   descripcion: string;
   imagenURL: string;
   tecnologias: string[];
+  tareas: string[];
 }
 
 export interface ProjectProps {
