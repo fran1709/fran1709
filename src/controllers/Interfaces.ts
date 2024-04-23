@@ -16,6 +16,7 @@ export interface Project {
   imagenURL: string;
   tecnologias: string[];
   tareas: string[];
+  posicion: number;
 }
 
 export interface ProjectProps {

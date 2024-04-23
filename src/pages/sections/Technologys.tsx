@@ -1,7 +1,8 @@
 import React from 'react';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
-import { SiTypescript, SiDotnet, SiMysql, SiFirebase, SiPostgresql, SiGithub, SiGitlab } from 'react-icons/si';
+import { SiTypescript, SiDotnet, SiMysql, SiFirebase, SiPostgresql, SiGithub, SiGitlab, SiKotlin, SiGit } from 'react-icons/si';
 import '../../shared/Technologys.css';
+import { IoLogoAndroid } from 'react-icons/io5';
 
 const Technologies: React.FC = () => {
     return (
@@ -52,6 +53,18 @@ const Technologies: React.FC = () => {
                 </div>
                 <div className="col-md-2 mb-4">
                     <div className="technology text-center">
+                        <IoLogoAndroid size={50} style={{ color: '#3DDC84' }} />
+                        <span>Android</span>
+                    </div>
+                </div>
+                <div className="col-md-2 mb-4">
+                    <div className="technology text-center">
+                        <SiKotlin size={50} style={{ color: '#0095D5' }} />
+                        <span>Kotlin</span>
+                    </div>
+                </div>
+                <div className="col-md-2 mb-4">
+                    <div className="technology text-center">
                         <SiMysql size={50} style={{ color: '#4479A1' }} />
                         <span>MySQL</span>
                     </div>
@@ -66,6 +79,12 @@ const Technologies: React.FC = () => {
                     <div className="technology text-center">
                         <SiFirebase size={50} style={{ color: '#FFCA28' }} />
                         <span>Firebase</span>
+                    </div>
+                </div>
+                <div className="col-md-2 mb-4">
+                    <div className="technology text-center">
+                        <SiGit size={50} style={{ color: '#F05032' }} />
+                        <span>Git</span>
                     </div>
                 </div>
                 <div className="col-md-2 mb-4">

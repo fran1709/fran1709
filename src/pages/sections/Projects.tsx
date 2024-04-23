@@ -32,11 +32,14 @@ const Projects: React.FC = () => {
         animateEntrance();
     }, [projects]); // Se ejecuta cada vez que projects cambia
 
+    // Ordenar los proyectos por posición de menor a mayor
+    const sortedProjects = [...projects].sort((a, b) => a.posicion - b.posicion);
+
     return (
         <div className="container">
             <div className="col project">
                 <div className="row row-cols-1 row-cols-md-3 g-4">
-                    {projects.map((project, index) => (
+                    {sortedProjects.map((project, index) => (
                         <div className="col-md-auto iconers text-center mb-3" key={index}>
                             <ProjectCard project={project} />
                         </div>

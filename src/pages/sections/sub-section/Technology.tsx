@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
-import { SiTypescript, SiDotnet, SiMysql, SiFirebase, SiPostgresql, SiGithub, SiGitlab} from 'react-icons/si';
+import { SiTypescript, SiDotnet, SiMysql, SiFirebase, SiPostgresql, SiGithub, SiGitlab, SiKotlin } from 'react-icons/si';
+import { IoLogoAndroid } from 'react-icons/io5';
+
 
 interface TechnologiesProps {
     list: string[];
@@ -22,7 +24,9 @@ const Technology: React.FC<TechnologiesProps> = ({ list }) => {
             tech === 'Firebase' ||
             tech === 'GitHub' ||
             tech === 'GitLab' ||
-            tech === 'C#'
+            tech === 'C#' ||
+            tech === 'Kotlin' ||
+            tech === 'Android'
         );
     });
 
@@ -52,6 +56,10 @@ const Technology: React.FC<TechnologiesProps> = ({ list }) => {
                 return <SiGithub size={30} style={{ color: '#181717' }} />;
             case 'GitLab':
                 return <SiGitlab size={30} style={{ color: '#FC6D26' }} />;
+            case 'Kotlin':
+                return <SiKotlin size={30} style={{ color: '#0095D5' }} />;
+            case 'Android':
+                return <IoLogoAndroid size={30} style={{ color: '#3DDC84' }} />;
             default:
                 return null;
         }
