@@ -10,8 +10,9 @@ const Navbar: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
+  const scrollToSection = (id: string, event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault(); // Evitar el comportamiento predeterminado
+    const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
@@ -27,19 +28,19 @@ const Navbar: React.FC = () => {
         <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#" onClick={() => scrollToSection('about')}>About</a>
+              <a className="nav-link" href="#" onClick={(e) => scrollToSection('about', e)}>About</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" onClick={() => scrollToSection('projects')}>Projects</a>
+              <a className="nav-link" href="#" onClick={(e) => scrollToSection('projects', e)}>Projects</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" onClick={() => scrollToSection('education')}>Education</a>
+              <a className="nav-link" href="#" onClick={(e) => scrollToSection('education', e)}>Education</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" onClick={() => scrollToSection('technologys')}>Technologies</a>
+              <a className="nav-link" href="#" onClick={(e) => scrollToSection('technologys', e)}>Technologies</a>
             </li>
             <li className=" nav-item">
-              <a className="nav-link" href="#" onClick={() => scrollToSection('contact')}>Contact</a>
+              <a className="nav-link" href="#" onClick={(e) => scrollToSection('contact', e)}>Contact</a>
             </li>
           </ul>
         </div>

@@ -9,7 +9,7 @@ const FloatingButton = () => {
   };
 
   return (
-    <button className="btn btn-primary btn-floating" onClick={scrollToTop}>
+    <button title='topButton' className="btn btn-primary btn-floating" onClick={scrollToTop}>
       <FaArrowUp />
     </button>
   );
